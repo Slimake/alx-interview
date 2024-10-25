@@ -44,5 +44,5 @@ try:
 except KeyboardInterrupt:
     # Print metrics on keyboard interruption
     print_metrics()
-except Exception(e):
-    raise Exception
+except Exception as e:
+    print(e)
