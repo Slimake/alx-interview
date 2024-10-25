@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 0-pascal_triangle
 """
@@ -17,7 +17,7 @@ def pascal_triangle(n: int) -> List[List[int]]:
 
     i = 1
     while i <= n:  # loop through if i < n
-        inner_arr = []
+        inner_arr: List[int] = []
         if len(outer_arr) == 0:  # if outer_arr is empty append [1]
             outer_arr.append([1])
         elif len(outer_arr) == 1:  # if len(outer_arr) is 1 append [1, 1]
