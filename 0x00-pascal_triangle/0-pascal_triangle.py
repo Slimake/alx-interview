@@ -2,22 +2,21 @@
 """
 0-pascal_triangle
 """
-from typing import List
 
 
-def pascal_triangle(n: int) -> List[List[int]]:
+def pascal_triangle(n):
     """
     Create a function pascal_triangle that returns a list of
     lists ofintegers representing the Pascal’s triangle of n:
     """
-    outer_arr: List[List[int]] = []
+    outer_arr = []
 
     if n <= 0:  # return an empty array
         return []
 
     i = 1
     while i <= n:  # loop through if i < n
-        inner_arr: List[int] = []
+        inner_arr = []
         if len(outer_arr) == 0:  # if outer_arr is empty append [1]
             outer_arr.append([1])
         elif len(outer_arr) == 1:  # if len(outer_arr) is 1 append [1, 1]
