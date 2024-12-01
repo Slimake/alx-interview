@@ -1,7 +1,11 @@
 #!/usr/bin/python3
+"""0-making_change module"""
 
 
 def makeChange(coins, total):
+    """determine the fewest number of coins
+    needed to meet a given amount total.
+    """
     # Edge case: If total is 0 or less, return 0
     if total <= 0:
         return 0
