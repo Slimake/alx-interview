@@ -2,6 +2,7 @@
 """0-prime_game
 """
 
+
 def isWinner(x, nums):
     """IsWinner function"""
     # Max number that needs to be considered
