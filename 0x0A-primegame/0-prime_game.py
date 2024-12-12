@@ -1,4 +1,9 @@
+#!/usr/bin/python3
+"""0-prime_game
+"""
+
 def isWinner(x, nums):
+    """IsWinner function"""
     # Max number that needs to be considered
     max_n = max(nums)
 
@@ -12,6 +17,7 @@ def isWinner(x, nums):
 
     # Function to simulate one round for a given n
     def determine_winner(n):
+        """Determine winner function"""
         # List of primes <= n
         primes = [i for i in range(2, n + 1) if is_prime[i]]
 
